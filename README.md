@@ -1,5 +1,15 @@
-# campeonato-brasileiro
+# Hackathon Decola Kepler :rocket:
+## Primeiro hackthon decola 2021 Iteris Consultoria
+<p align="justify"> Segundo projeto em Vue.js </p>
 
+## Segunda aula: Campeonato Brasileiro
+### - Novos componentes
+### - Rotas (router)
+### - Consumo de Api
+### - laço for 
+### - Vuetify
+
+<br>
 ## Project setup
 ```
 npm install
