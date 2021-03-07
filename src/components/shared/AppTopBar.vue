@@ -1,0 +1,53 @@
+<template>
+  <div class="app-top-bar">
+    <v-app-bar app color="green lighten-1" dense dark>
+     <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-toolbar-title>Campeonato brasileiro</v-toolbar-title>
+    </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group v-model="group" active-class="green lighten-1--text ">
+        
+        <router-link to="/">
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-soccer</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Inicio</v-list-item-title>
+          </v-list-item>
+        </router-link>
+        
+        <router-link to="/classificacao"> 
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-podium</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Classificação</v-list-item-title>
+          </v-list-item>
+        </router-link>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
+</template>
+
+<script>
+export default {
+    name: 'AppTopBar',
+    data: () => ({
+      drawer: false,
+      group: null,
+    })
+    
+
+}
+</script>
+
+<style>
+.app-top-bar a{
+  text-decoration: none;
+  text-decoration-color: white;
+}
+</style>
